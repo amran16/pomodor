@@ -121,9 +121,9 @@ function clockSession(){
    else{
      if(currentSession === 'session')
      {
-       currentSession = ('break');
+       currentSession = 'break';
        currentLength = breakTime;
-       current.textContent = ('Relax!!');
+       current.textContent = 'Relax!!';
      }
      else
      {
