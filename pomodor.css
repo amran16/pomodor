@@ -3,20 +3,21 @@ body {
   font-family: 'Raleway', sans-serif;
   font-size: 1.5em;
 }
-.container {
+.container{
   background-color: #2a2a2a;
   border-radius:10px;
   display: flex;
   padding: 5%;
+  align-items: center;
   flex-direction: column;
   margin-top: 1%;
   width: 80%
 }
 
-h1{
+h3{
   font-family: cursive;
-  font-size: 6.5em;
-  color: #DC143C;
+  font-size: 3em;
+  color: #ffbf00;
   text-align: center;
   margin: auto;
   padding: 20px;
@@ -54,7 +55,7 @@ button {
   width: 300px;
   height: 300px;
   margin: 0 auto;
-  border: 2px solid #DC143C;
+  border: 2px solid #ffbf00;
   border-radius: 30%;
   cursor: pointer;
   overflow: hidden;
@@ -78,5 +79,5 @@ button {
 #begin {
   margin-top: 40px;
   font-size: 19px;
-  font-family: cursive;
+  font-family: monospace;
 }
