@@ -1,5 +1,5 @@
 function formatNumber(num) {
-  return (num < 10) ? "0" + num : num;
+  return (num < 10) ? '0' + num : num;
 }
 
 function secsToTime(num){
@@ -9,15 +9,15 @@ function secsToTime(num){
     var mins = Math.floor(num % 3600 / 60);
     var secs = Math.floor(num % 3600 % 60);
 
-    hrs = (hrs > 0) ? formatNumber(hrs) + ":" : "";
-    mins = (mins > 0) ? formatNumber(mins) + ":" : "00:";
+    hrs = (hrs > 0) ? formatNumber(hrs) + ':' : '';
+    mins = (mins > 0) ? formatNumber(mins) + ':' : '00:';
     secs = formatNumber(secs);
 
     return hrs + mins + secs;
 }
 
 function timeToSecs(time) {
-  time = time.split(":").reverse();
+  time = time.split(':').reverse();
 
   var  numToSec = 0;
 
@@ -42,7 +42,7 @@ var current = document.getElementById('session');
 var breakTime = parseInt(breakTimeSession.textContent) * 60;
 var workTime = parseInt(workTimeSession.textContent) * 60;
 
-var currentSession = "session", currentLength = workTime;
+var currentSession = 'session', currentLength = workTime;
 
 var timer;
 var isBreak = false;
